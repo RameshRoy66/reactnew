@@ -7,7 +7,7 @@ export default function navbar() {
     <div className=''>
         <nav className="navbar navbar-expand-lg bg-warning  fixed-top">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">
+    <a className="navbar-brand" href="/">
     <img src="https://img.freepik.com/free-vector/colorful-bird-illustration-gradient_343694-1741.jpg?t=st=1711782241~exp=1711785841~hmac=a50594a9742ec680446c90cd25a67221f5a4e7e5a7ca5038b8ca30fd0b0b814a&w=740" 
     alt="" width={40} />
         </a>
