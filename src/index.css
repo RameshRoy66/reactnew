@@ -44,4 +44,5 @@ code {
   text-decoration: none !important;
   font-size: 40px;
   color: rgb(153, 0, 255);
+  box-shadow: none;
 }
