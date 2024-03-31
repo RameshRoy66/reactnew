@@ -1,12 +1,13 @@
 import React from 'react'
-import Navbar from './navbar'
+import Layout from '../layout/layout'
+
 
 export default function services() {
   return (
-    <div className='ramesh'>
-    <Navbar></Navbar>
-    <div>services</div>
-    
+    <Layout>
+    <div >
+    services
     </div>
+    </Layout>
   )
 }

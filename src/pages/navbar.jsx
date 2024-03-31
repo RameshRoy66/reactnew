@@ -6,13 +6,13 @@ export default function navbar() {
   return (
     <div className=''>
         <nav className="navbar navbar-expand-lg bg-warning  fixed-top">
-  <div className="container-fluid">
+  <div className="container">
     <a className="navbar-brand" href="/">
     <img src="https://img.freepik.com/free-vector/colorful-bird-illustration-gradient_343694-1741.jpg?t=st=1711782241~exp=1711785841~hmac=a50594a9742ec680446c90cd25a67221f5a4e7e5a7ca5038b8ca30fd0b0b814a&w=740" 
     alt="" width={40} />
         </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon" />
+    <i class="bi bi-balloon-heart"></i>
     </button>
     <div className="offcanvas offcanvas-end" tabIndex={-1} id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
       <div className="offcanvas-header">

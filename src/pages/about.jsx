@@ -1,12 +1,14 @@
 import React from 'react'
-import Navbar from './navbar'
+// import Navbar from './navbar'
+import Layout from '../layout/layout'
 
 export default function About() {
   return (
-    <div className='ramesh'>
-    <Navbar></Navbar>
-    <div>ABOUT</div>
-    
+    <Layout>
+    <div >
+    About
     </div>
+    </Layout>
+    
   )
 }

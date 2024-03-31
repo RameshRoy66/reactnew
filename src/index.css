@@ -14,7 +14,7 @@ code {
 
 .ramesh{
   margin-top: 66px;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .container-fluid{
@@ -36,4 +36,12 @@ code {
   justify-content: center;
   align-items: center;
   bottom: 0;
+}
+
+.navbar-toggler,.navbar-toggler:focus,.container-fluid:focus-visible,.navbar-toggler .bi{
+  border: none !important;
+  outline: none !important;
+  text-decoration: none !important;
+  font-size: 40px;
+  color: rgb(153, 0, 255);
 }
