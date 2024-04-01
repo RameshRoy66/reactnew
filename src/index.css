@@ -1,5 +1,6 @@
 body {
   overflow: auto !important;
+  width: 100% !important;
 }
 
 code {
@@ -16,10 +17,13 @@ code {
 
 
 .container-fluid{
-  padding: 0;
+  /* padding: 0;
   margin: 0;
-  overflow:  scroll !important;
-  ;
+  overflow:  scroll !important; */
+  /* max-width: 100%; */
+  padding: 0; 
+    overflow: hidden; 
+  
 }
 
 .navbar{
