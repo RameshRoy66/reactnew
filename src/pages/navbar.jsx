@@ -26,15 +26,15 @@ export default function navbar() {
             {/* <a className="nav-link" href="/">Home</a> */}
           </li>
           <li className="nav-item">
-          <Link className="nav-link" to="/About">About</Link>
+          <Link className="nav-link" to="/about">About</Link>
             {/* <a className="nav-link" href="About">About</a> */}
           </li>
           <li className="nav-item">
-          <Link className="nav-link" to="/Services">Services</Link>
+          <Link className="nav-link" to="/services">Services</Link>
             {/* <a className="nav-link" href="Services">Services</a> */}
           </li>
           <li className="nav-item">
-          <Link className="nav-link" to="/Contact">Contact</Link>
+          <Link className="nav-link" to="/contact">Contact</Link>
             {/* <a className="nav-link" href="Contact">Contact</a> */}
           </li>
           <li className="nav-item">
