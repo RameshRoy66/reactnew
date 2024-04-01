@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import {Outlet, Link } from "react-router-dom";
 
 
 export default function navbar() {
@@ -43,6 +43,7 @@ export default function navbar() {
   </div>
 </nav>
 
+<Outlet></Outlet>
 
     </div>
   )

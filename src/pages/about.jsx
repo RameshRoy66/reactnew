@@ -3,10 +3,18 @@ import React from 'react'
 import Layout from '../layout/layout'
 
 export default function About() {
+  const numbers = [1, 2, 3, 4, 5];
+  const listItems = numbers.map((numbers) =>
+  <li>{numbers}</li>
+
+);
   return (
     <Layout>
     <div >
-    About
+
+  <li>{listItems}</li>
+    
+
     </div>
     </Layout>
     
