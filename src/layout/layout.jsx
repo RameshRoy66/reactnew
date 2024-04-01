@@ -7,7 +7,7 @@ export default function Layout({children}) {
     <div>
         <Navbar> </Navbar>
             <div className='ramesh'>{children}</div>
-        <Footer/>
+        <Footer  />
     </div>
   )
 }

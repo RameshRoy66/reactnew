@@ -14,8 +14,11 @@ code {
 
 .ramesh{
   margin-top: 66px;
+  margin-bottom: 41px;
   /* background-color: red; */
 }
+
+
 
 .container-fluid{
   padding: 0;
@@ -45,4 +48,9 @@ code {
   font-size: 40px;
   color: rgb(153, 0, 255);
   box-shadow: none;
+}
+
+.servicecards{
+  /* height: 300px;
+  overflow-y:scroll ; */
 }

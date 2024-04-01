@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -12,6 +12,7 @@ import About from './pages/about';
 import Services from './pages/services';
 import Contact from './pages/contact';
 import Nopage from './pages/nopage';
+import Page1 from './pages/nrmlpages/page1';
 
 import {
   createBrowserRouter,
@@ -24,21 +25,37 @@ const router = createBrowserRouter([
     element:<App/>,
   },
   {
-    path: "About",
+    path: "/About",
     element:<About/>,
+      // children:[
+      //   {
+      //   path:"/page1",
+      //   element:<Page1/>,
+      //   },
+      // ],
   },
   {
-    path: "Services",
+    path: "/Services",
     element:<Services/>,
   },
+
   {
-    path: "Contact",
+    path: "/Contact",
     element:<Contact/>,
   },
+ 
+
   {
     path: "*",
     element:<Nopage/>,
   },
+
+  
+  {
+    path: "/Services/Page1",
+    element:<Page1/>,
+  },
+
 
 ]);
 

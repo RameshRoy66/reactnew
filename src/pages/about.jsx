@@ -1,21 +1,30 @@
 import React from 'react'
 // import Navbar from './navbar'
-import Layout from '../layout/layout'
+import Layout from '../layout/layout';
+import comments from '../components/dummydata2'
 
 export default function About() {
-  const numbers = [1, 2, 3, 4, 5];
-  const listItems = numbers.map((numbers) =>
-  <li>{numbers}</li>
-
-);
+  
   return (
     <Layout>
-    <div >
+      <div className="container">
+      <div className='row'>  
+    {comments.map((comments) => {
+      return(
+        <div className='col-sm-3' >
+          <div className="card">
+            <div className="card-header">{comments.id}</div>
+            <div className="card-body">{comments.body}</div>
+            <div className="card-footer">{comments.user.username}</div>
+          </div>
+        </div>
+      )
+    }
+    )}
 
-  <li>{listItems}</li>
-    
 
     </div>
+      </div>
     </Layout>
     
   )
