@@ -11,6 +11,7 @@ import reportWebVitals from './reportWebVitals';
 import About from './pages/about';
 import Services from './pages/services';
 import Contact from './pages/contact';
+import Nopage from './pages/nopage';
 
 import {
   createBrowserRouter,
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "Contact",
     element:<Contact/>,
+  },
+  {
+    path: "*",
+    element:<Nopage/>,
   },
 
 ]);

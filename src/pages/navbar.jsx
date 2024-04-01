@@ -37,6 +37,11 @@ export default function navbar() {
           <Link className="nav-link" to="/Contact">Contact</Link>
             {/* <a className="nav-link" href="Contact">Contact</a> */}
           </li>
+          <li className="nav-item">
+          <Link className="nav-link" to="/page">Nopage</Link>
+            {/* <a className="nav-link" href="Contact">Contact</a> */}
+          </li>
+
         </ul>
       </div>
     </div>
