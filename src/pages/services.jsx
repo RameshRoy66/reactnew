@@ -23,7 +23,7 @@ export default function services() {
         
 
 
-        <Link to="/Services/Page1">
+        <Link to="/services/page1">
         <h5>{language.brand}</h5>
         </Link>
 
