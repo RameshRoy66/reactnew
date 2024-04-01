@@ -16,6 +16,8 @@ export default function About() {
             <div className="card-header">{comments.id}</div>
             <div className="card-body">{comments.body}</div>
             <div className="card-footer">{comments.user.username}</div>
+            <a href="https://www.google.com/" target='_blank' rel="noreferrer">ramesh</a>
+            {/* <a href="../pages/contact">about</a> */}
           </div>
         </div>
       )
