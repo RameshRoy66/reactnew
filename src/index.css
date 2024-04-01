@@ -1,6 +1,7 @@
 body {
   overflow: auto !important;
   /* width: 100% !important; */
+  /* background-color:white !important; */
 }
 
 code {
@@ -49,7 +50,25 @@ code {
   box-shadow: none;
 }
 
-.servicecards{
+/* .servicecards{ */
   /* height: 300px;
   overflow-y:scroll ; */
+/* } */
+
+.darkmode .bi{
+  font-size: 15px
+}
+
+@media (max-width:900px){
+  .darkmode{
+    display: none;
+  }
+  .ram{display: block !important;
+  }
+}
+
+.ram{
+  font-size: 30px;
+  margin-left: 20px;
+  display: none;
 }

@@ -11,7 +11,7 @@ export default function About() {
       <div className='row'>  
     {comments.map((comments) => {
       return(
-        <div className='col-sm-4' >
+        <div className='col-sm-4 d-flex justify-content-center' >
           <div className="card">
             <div className="card-header">{comments.id}</div>
             <div className="card-body">{comments.body}</div>

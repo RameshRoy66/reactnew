@@ -19,8 +19,12 @@ export default function services() {
         <div className="card-body">{language.description}</div>
         <div className="card-footer">
         <img src={language.thumbnail} width={100} alt="" />
-        <img src={language.images} width={100} alt="" />  
-        
+        {/* <img src={language.images} width={100} alt="" />   */}
+        {language.images.map((image =>{
+          return(
+            <img src={image} alt="" width={50} srcset="" />
+          )
+        }))}
 
 
         <Link to="/services/page1">
