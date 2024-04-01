@@ -6,7 +6,7 @@ export default function services() {
   return (
     <Layout>
     <div >
-    services
+    services page
     </div>
     </Layout>
   )
