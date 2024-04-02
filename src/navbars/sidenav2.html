@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Template - Sidebar Navigation</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      top: 50px; /* Height of the header */
+      left: 0;
+      height: calc(100% - 50px); /* Adjusted height */
+      width: 250px;
+      padding: 20px;
+      background-color: #343a40;
+      color: #fff;
+      transition: left 0.5s ease; /* Slide animation */
+      z-index: 1;
+      overflow-y: auto; /* Enable scrolling */
+    }
+
+    /* Hide scrollbar for webkit browsers */
+    .sidebar::-webkit-scrollbar {
+      width: 1px; /* Remove scrollbar width */
+      display: none; /* Hide scrollbar */
+    }
+
+    /* Show sidebar */
+    .sidebar.show {
+      left: 0;
+    }
+
+    /* Main Content */
+    .main-content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+
+    /* Navbar */
+    .navbar-toggler {
+      display: none; /* Hide toggler by default */
+    }
+
+    @media (max-width: 768px) {
+    .navbar-toggler {
+        display: block; /* Display toggler on small screens */
+    }
+    
+    .sidebar {
+        display: none; /* Hide sidebar on small screens */
+        position: fixed;
+        top: 50px; /* Height of the header */
+        left: 0;
+        height: calc(100% - 50px); /* Adjusted height */
+        width: 250px;
+        padding: 20px;
+        background-color: #343a40;
+        color: #fff;
+        z-index: 1;
+      }
+
+      .sidebar.show {
+        display: block;
+        animation: slideIn 0.5s forwards; /* Slide animation */
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      .main-content {
+        margin-left: 0; /* Adjust main content margin on small screens */
+      }
+    }
+
+    /* Container */
+    .container-fluid {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .margintop{
+        margin-top: 50px;
+    }
+
+
+    .nav-link .bi{
+        color: white;
+        padding: 15px;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Admin Panel</a>
+    <button class="navbar-toggler" type="button" id="toggleSidebar">&#9776;</button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="margintop">
+    <!-- Sidebar -->
+<nav id="sidebar" class="sidebar">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+        <i class="bi bi-speedometer"></i>Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+        <i class="bi bi-box2"></i>Orders</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+        <i class="bi bi-bag-check"></i>Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+        <i class="bi bi-people-fill"></i>Customers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#collapseExample" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">
+          Dropdownww <i class="bi bi-chevron-down"></i> 
+        </a>
+        <div class="collapse" id="collapseExample">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Submenu Item 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Submenu Item 2</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+
+
+
+      <!-- Add more sidebar items as needed -->
+    </ul>
+  </nav>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Main Content</h1>
+    <i class="bi bi-sun" ></i>
+    <p>This is your main content area. Replace this with your actual content.</p>
+    <p>Scroll down to see the sidebar fade out.</p>
+    <!-- Adding some content to make the page scrollable -->
+    <div style="height: 1500px;"></div>
+  </div>
+  
+</div>
+
+
+<!-- Bootstrap JS Bundle (Bootstrap + Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom Script -->
+<script>
+  // Toggle sidebar
+  document.getElementById('toggleSidebar').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.toggle('show');
+  });
+</script>
+</body>
+</html>

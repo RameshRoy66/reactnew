@@ -13,6 +13,11 @@ import Services from './pages/services';
 import Contact from './pages/contact';
 import Nopage from './pages/nopage';
 import Page1 from './pages/nrmlpages/page1';
+import 'swiper/css';
+//admindashboard
+import Adminhome from './admindashboard/pages/adminhome';
+
+
 
 import {
   createBrowserRouter,
@@ -55,6 +60,12 @@ const router = createBrowserRouter([
     path: "/services/page1",
     element:<Page1/>,
   },
+
+  {
+    path: "/adminhome",
+    element:<Adminhome/>,
+  },
+
 
 
 ]);
