@@ -3,7 +3,7 @@ import '../admincss/admin.css';
 import Navbar from '../components/navbar'; // Import the Navbar component
 import Sidebar from '../components/sidebar'; // Import the Sidebar component
 // import App from '../components/apexcharts';
-// import MyDataTable from '../components/tables';
+import MyTable from '../components/tables';
 
 
 export default function Adminhome() {
@@ -12,6 +12,36 @@ export default function Adminhome() {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+
+  const columns = React.useMemo(
+    () => [
+      {
+        Header: 'ID',
+        accessor: 'id',
+      },
+      {
+        Header: 'Name',
+        accessor: 'name',
+      },
+      {
+        Header: 'Age',
+        accessor: 'age',
+      },
+    ],
+    []
+  );
+
+  const data = React.useMemo(
+    () => [
+      { id: 1, name: 'John', age: 30 },
+      { id: 2, name: 'Jane', age: 25 },
+      { id: 3, name: 'Doe', age: 40 },
+    ],
+    []
+  );
+
+
+
 
   return (
     <div>
@@ -48,16 +78,21 @@ export default function Adminhome() {
         </div>
 
 
-          </div>
           <div className="container">
 
           {/* <App/> */}
-          {/* <MyDataTable/> */}
+          {/* <App/> */}
+          <div style={{ padding: '20px' }}>
+      <h1>Employee Data</h1>
+      <MyTable columns={columns} data={data} />
+    </div>
           </div>
 
 
         </div>
     </div>
+    </div>
+
   )
 }
 
